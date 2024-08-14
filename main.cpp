@@ -7,7 +7,7 @@ int target = 12;
 int binarySearch(int target, vector<int> vec){
     int lo = 0;
     int hi = vec.size() - 1;
-    while(lo <= target){
+    while(lo <= hi){
         int mid = lo + (hi - lo) / 2;
         if(vec[mid] == target){
             return mid;
@@ -23,5 +23,8 @@ int binarySearch(int target, vector<int> vec){
 }
 
 int main(){
+    cout << binarySearch(12, vec);
+    
     return 0;
+
 }
